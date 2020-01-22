@@ -217,6 +217,7 @@ header .content-container .title-card h1 {
 @media (max-width: 700px) {
   header .content-container .title-card h1 {
     font-size: 2rem;
+    letter-spacing: 0.5rem;
   }
 }
 header .content-container .title-card p {
@@ -271,7 +272,7 @@ header .content-container .button-container button:hover {
 }
 .container section .experience-container,
 .container section .education-container {
-  margin: 10px 0;
+  margin: 20px 0;
 }
 .container section .experience-container ul,
 .container section .education-container ul {
@@ -292,7 +293,7 @@ header .content-container .button-container button:hover {
 .container section .education-container p,
 .container section .experience-container ul,
 .container section .education-container ul {
-  margin: 10px 0;
+  margin: 20px 0;
 }
 .container footer {
   width: 35%;
