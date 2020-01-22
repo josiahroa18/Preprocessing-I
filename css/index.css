@@ -2,6 +2,20 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Bebas Neue Regular'), local('BebasNeue-Regular'), url(https://fonts.gstatic.com/s/bebasneue/v1/JTUSjIg69CK48gW7PXoo9Wlhzg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Libre Franklin'), local('LibreFranklin-Regular'), url(https://fonts.gstatic.com/s/librefranklin/v4/jizDREVItHgc8qDIbSTKq4XkRiUf2zI.ttf) format('truetype');
+}
 html,
 body,
 div,
@@ -129,8 +143,80 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
+  max-width: 100%;
+  font-size: 62.5%;
 }
 html,
 body {
   height: 100%;
+  margin: 2%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 0.1rem;
+}
+p,
+a {
+  font-family: 'Libre Franklin', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: black;
+}
+header .img {
+  display: flex;
+  width: 25%;
+  padding: 1%;
+}
+header .img img {
+  border: 5px solid white;
+  border-radius: 50%;
+}
+header .content-container {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+header .content-container .title-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0;
+}
+header .content-container .title-card h1 {
+  font-size: 4rem;
+  letter-spacing: 1rem;
+  color: white;
+}
+header .content-container .title-card p {
+  color: white;
+  letter-spacing: 0.1rem;
+}
+header .content-container .button-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+header .content-container .button-container button {
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 0.1rem;
+}
+header .content-container .button-container button:hover {
+  background-color: lightgray;
 }
