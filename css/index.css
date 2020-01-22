@@ -178,15 +178,26 @@ header {
 }
 header .img {
   display: flex;
-  width: 25%;
+  width: 30%;
   padding: 1%;
 }
 header .img img {
   border: 5px solid white;
   border-radius: 50%;
 }
+@media (max-width: 750px) {
+  header .img {
+    width: 40%;
+  }
+}
+@media (max-width: 500px) {
+  header .img {
+    margin-top: 20px;
+    width: 50%;
+  }
+}
 header .content-container {
-  width: 35%;
+  width: 50%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -202,6 +213,11 @@ header .content-container .title-card h1 {
   font-size: 4rem;
   letter-spacing: 1rem;
   color: white;
+}
+@media (max-width: 700px) {
+  header .content-container .title-card h1 {
+    font-size: 2rem;
+  }
 }
 header .content-container .title-card p {
   color: white;
@@ -220,6 +236,21 @@ header .content-container .button-container button {
 }
 header .content-container .button-container button:hover {
   background-color: lightgray;
+}
+@media (max-width: 700px) {
+  header .content-container .button-container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  header .content-container {
+    width: 70%;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+  }
 }
 .container {
   margin: 20px 0;
@@ -271,6 +302,13 @@ header .content-container .button-container button:hover {
 .container footer .footer-container {
   margin: 20px 0;
 }
+.container footer .footer-container ul {
+  list-style-type: circle;
+  list-style-position: inside;
+}
+.container footer .footer-container ul li {
+  margin: 10px 0;
+}
 .container footer .footer-container h2 {
   font-size: 1.8rem;
 }
@@ -281,10 +319,21 @@ header .content-container .button-container button:hover {
 .container footer .contact-container i {
   margin-right: 3%;
 }
-.footer-container ul {
-  list-style-type: circle;
-  list-style-position: inside;
+@media (max-width: 800px) {
+  .container footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
 }
-.footer-container ul li {
-  margin: 10px 0;
+@media (max-width: 500px) {
+  .container footer {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
 }
