@@ -67,6 +67,8 @@ html, body {
 @body-font: 'Libre Franklin', sans-serif;
 @header-text-color: white;
 @footer-background: #f0e0d1;
+@margin-spacing-10: 10px 0;
+@margin-spacing-20: 20px 0;
 // End of Variables
 
 
@@ -74,6 +76,15 @@ html, body {
 .align-center(){
 	display: flex;
 	align-items: center;
+}
+.list-decoration(){
+	ul{
+		list-style-type: circle;
+		list-style-position: inside;
+		li{
+			margin: @margin-spacing-10;
+		}
+	}
 }
 // End of mix-ins
 
@@ -115,7 +126,7 @@ header{
 		.title-card{
 			.align-center();
 			flex-direction: column;
-			margin: 20px 0;
+			margin: @margin-spacing-20;
 			h1{
 				font-size: 4rem;
 				letter-spacing: 1rem;
@@ -152,35 +163,48 @@ header{
 	justify-content: flex-end;
 	justify-content: space-between;
 	section{
-		// Styles here
-	}
+		padding: 0 5%;
+		margin: @margin-spacing-20;
+		h2{
+			font-size: 1.8rem;
+		}
+		h4{
+			font-size: 1.2rem;
+		}
+		.experience-container, .education-container{
+			margin: @margin-spacing-10;
+			.list-decoration();
+			p.light{
+				color:darkgray;
+			}
+			h4, p, ul{
+				margin: @margin-spacing-10;
+			}
+		}
+	} // Closing body section styles
 	footer{
 		width: 35%;
 		padding: 0 5%;
 		background-color: @footer-background;
 		.footer-container{
-			margin: 20px 0;
+			margin: @margin-spacing-20;
 			h2{
 				font-size: 1.8rem;
 			}
 		}
 		.contact-container{
-			margin: 10px 0;
+			margin: @margin-spacing-10;
 			display: flex;
 			i{
 				margin-right: 3%;
 			}
 		}
-	}
+	} // Closing footer styles
 }
 
 // Styles for links in footer-container
 .footer-container{
-	ul{
-		list-style-type: circle;
-		list-style-position: inside;
-		li{
-			margin: 10px 0;
-		}
-	}
+	.list-decoration();
 }
+
+
