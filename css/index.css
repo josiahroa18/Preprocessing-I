@@ -161,7 +161,8 @@ h6 {
   letter-spacing: 0.1rem;
 }
 p,
-a {
+a,
+li {
   font-family: 'Libre Franklin', sans-serif;
 }
 a {
@@ -219,4 +220,36 @@ header .content-container .button-container button {
 }
 header .content-container .button-container button:hover {
   background-color: lightgray;
+}
+.container {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  justify-content: space-between;
+}
+.container footer {
+  width: 35%;
+  padding: 0 5%;
+  background-color: #f0e0d1;
+}
+.container footer .footer-container {
+  margin: 20px 0;
+}
+.container footer .footer-container h2 {
+  font-size: 1.8rem;
+}
+.container footer .contact-container {
+  margin: 10px 0;
+  display: flex;
+}
+.container footer .contact-container i {
+  margin-right: 3%;
+}
+.footer-container ul {
+  list-style-type: circle;
+  list-style-position: inside;
+}
+.footer-container ul li {
+  margin: 10px 0;
 }
