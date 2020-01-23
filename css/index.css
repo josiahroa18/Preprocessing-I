@@ -1,1 +1,340 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Bebas Neue Regular'), local('BebasNeue-Regular'), url(https://fonts.gstatic.com/s/bebasneue/v1/JTUSjIg69CK48gW7PXoo9Wlhzg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Libre Franklin'), local('LibreFranklin-Regular'), url(https://fonts.gstatic.com/s/librefranklin/v4/jizDREVItHgc8qDIbSTKq4XkRiUf2zI.ttf) format('truetype');
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+  font-size: 62.5%;
+}
+html,
+body {
+  height: 100%;
+  margin: 2%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 0.1rem;
+}
+p,
+a,
+li {
+  font-family: 'Libre Franklin', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: black;
+}
+header .img {
+  display: flex;
+  width: 30%;
+  padding: 1%;
+}
+header .img img {
+  border: 5px solid white;
+  border-radius: 50%;
+}
+@media (max-width: 750px) {
+  header .img {
+    width: 40%;
+  }
+}
+@media (max-width: 500px) {
+  header .img {
+    margin-top: 20px;
+    width: 50%;
+  }
+}
+header .content-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+header .content-container .title-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0;
+}
+header .content-container .title-card h1 {
+  font-size: 4rem;
+  letter-spacing: 1rem;
+  color: white;
+}
+@media (max-width: 700px) {
+  header .content-container .title-card h1 {
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+  }
+}
+header .content-container .title-card p {
+  color: white;
+  letter-spacing: 0.1rem;
+}
+header .content-container .button-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+header .content-container .button-container button {
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 0.1rem;
+}
+header .content-container .button-container button:hover {
+  background-color: lightgray;
+}
+@media (max-width: 700px) {
+  header .content-container .button-container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  header .content-container {
+    width: 70%;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+  }
+}
+.container {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  justify-content: space-between;
+}
+.container section {
+  padding: 0 5%;
+  margin: 20px 0;
+}
+.container section h2 {
+  font-size: 1.8rem;
+}
+.container section h4 {
+  font-size: 1.2rem;
+}
+.container section .experience-container,
+.container section .education-container {
+  margin: 20px 0;
+}
+.container section .experience-container ul,
+.container section .education-container ul {
+  list-style-type: circle;
+  list-style-position: inside;
+}
+.container section .experience-container ul li,
+.container section .education-container ul li {
+  margin: 10px 0;
+}
+.container section .experience-container p.light,
+.container section .education-container p.light {
+  color: darkgray;
+}
+.container section .experience-container h4,
+.container section .education-container h4,
+.container section .experience-container p,
+.container section .education-container p,
+.container section .experience-container ul,
+.container section .education-container ul {
+  margin: 20px 0;
+}
+.container footer {
+  width: 35%;
+  padding: 0 5%;
+  background-color: #f0e0d1;
+}
+.container footer .footer-container {
+  margin: 20px 0;
+}
+.container footer .footer-container ul {
+  list-style-type: circle;
+  list-style-position: inside;
+}
+.container footer .footer-container ul li {
+  margin: 10px 0;
+}
+.container footer .footer-container h2 {
+  font-size: 1.8rem;
+}
+.container footer .contact-container {
+  margin: 10px 0;
+  display: flex;
+}
+.container footer .contact-container i {
+  margin-right: 3%;
+}
+@media (max-width: 800px) {
+  .container footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+}
+@media (max-width: 500px) {
+  .container footer {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+}
